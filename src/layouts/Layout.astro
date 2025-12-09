@@ -24,12 +24,12 @@ import ThemeSwitch from "../components/ThemeSwitch.astro";
         <ThemeSwitch />
         <div class="drawer-content flex flex-col lg:flex-row">
           <!-- OPEN BUTTON (hidden on desktop) -->
-          <div class="block lg:hidden">
+          <div class="block lg:hidden flex justify-end">
             <label for="my-drawer-4" class="btn btn-ghost">
               <!-- Menu icon -->
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
+                class="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -52,9 +52,7 @@ import ThemeSwitch from "../components/ThemeSwitch.astro";
           for="my-drawer-4"
           aria-label="close sidebar"
           class="drawer-overlay"></label>
-        <div
-          class="flex min-h-full w-14 flex-col items-start bg-base-200 lg:w-64"
-        >
+        <div class="flex h-screen w-64 flex-col bg-base-200 overflow-y-auto">
           <!-- Sidebar content here -->
           <ul class="menu w-full grow">
             <!-- list item -->
@@ -84,27 +82,174 @@ import ThemeSwitch from "../components/ThemeSwitch.astro";
 
             <!-- list item -->
             <li>
-              <button
-                class="max-lg:tooltip max-lg:tooltip-right"
-                data-tip="Settings"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  stroke-linejoin="round"
-                  stroke-linecap="round"
-                  stroke-width="2"
-                  fill="none"
-                  stroke="currentColor"
-                  class="my-1.5 inline-block size-4"
+              <div class="flex flex-col items-start">
+                <a href="Home" rel="history"
+                  >WANG,&nbsp; 王 &nbsp; &nbsp; <br />SZU-YI &nbsp; 思&nbsp; 懿</a
+                > &nbsp; <br />
+                |<br />
+                <br />
+                <br />
+                <a href="Project-Nav" rel="history">Work</a><br /><a
+                  href="Seeding-her-feet"
+                  rel="history"
+                  ><span style="color: #969696;">Seeding Her Feet</span></a
                 >
-                  <path d="M20 7h-9"></path>
-                  <path d="M14 17H5"></path>
-                  <circle cx="17" cy="17" r="3"></circle>
-                  <circle cx="7" cy="7" r="3"></circle>
-                </svg>
-                <span class="max-lg:hidden">Settings</span>
-              </button>
+                <br /><a href="Home" rel="history"
+                  ><span style="color: #969696;">Rings 環 </span></a
+                >
+                <br /><a href="You-House" rel="history"
+                  ><span style="color: #969696;">You House 遊居之間</span></a
+                >
+                <a href="Zi-Yuan-A-Spring-Stroll" rel="history"
+                  ><span style="color: #969696;"
+                    ><br />Zi Yuan, A Spring Stroll 字園遊步</span
+                  ></a
+                ><br /><a href="Zi-Xian-at-TENT" rel="history"
+                  ><span style="color: #969696;">Zi Xian at TENT&nbsp;</span></a
+                ><a href="Foreshore" rel="history"
+                  ><span style="color: #969696;"
+                    ><br />
+                    Foreshore 漫步潮閒</span
+                  ></a
+                >&nbsp;<br />
+                <a href="Huai-House-Strolling-House" rel="history"
+                  ><span style="color: #969696;">Huai House 徊屋</span></a
+                >&nbsp;<br />
+                <a href="Shan-yu-Shu" rel="history"
+                  ><span style="color: #969696;">Shan yu Shu</span></a
+                ><br />
+                <span style="color: #969696;"
+                  ><a href="Ritual-upon-the-Paper" rel="history"
+                    ><span style="color: #969696;">
+                      Ritual upon the Paper<br />
+                    </span></a
+                  ></span
+                >
+                <span style="color: #969696;"
+                  ><a href="Writing-In-between-the-Post-Urban" rel="history"
+                    ><span style="color: #969696;"
+                      >In-between the Post Urban</span
+                    ></a
+                  ></span
+                ><br />
+                <a href="Extension-Park-Vijversburg" rel="history"
+                  ><span style="color: #969696;"
+                    >Extension Park Vijversburg</span
+                  ></a
+                >
+                <br />
+                <a href="Zi-Xian-The-Hanzi-Space" rel="history"
+                  ><span style="color: #969696;">Zi Xian 字閒 </span></a
+                >
+                <br />
+                <a href="The-Stage-After" rel="history"
+                  ><span style="color: #969696;">The Stage After</span></a
+                >
+                <br />
+                <a href="Moving-Drawings" rel="history"
+                  ><span style="color: #969696;">Moving Drawings</span></a
+                >
+                <br />
+                <span style="color: #969696;"></span>
+                <a href="Narrative-Theatre" rel="history"
+                  ><span style="color: #969696;">Narrative Theatre</span></a
+                >
+                <br />
+                <span style="color: #969696;"
+                  ><a href="Water-Air-Ambience" rel="history"
+                    ><span style="color: #969696;">Water, Air, Ambience</span
+                    ></a
+                  ></span
+                >
+                <br />
+                <span style="color: #969696;"></span>
+                <a href="Narrative-Rooms" rel="history"
+                  ><span style="color: #969696;">Narrative Rooms</span></a
+                >
+                <br />
+                <a href="Hanzi-on-the-Table" rel="history"
+                  ><span style="color: #969696;">Hanzi on the Table</span>
+                </a><br />
+                <span style="color: #969696;"></span>
+                <a href="The-Shining-Matter" rel="history"
+                  ><span style="color: #969696;">The Shinig Matter</span></a
+                >
+                <br />
+                <a href="un-Folded-Clusters" rel="history"
+                  ><span style="color: #969696;">(un)Folded Clusters</span
+                  >&nbsp;</a
+                ><br />
+                <a href="Meet-the-Mountains" rel="history"
+                  ><span style="color: #969696;">Meet the Mountains</span>
+                </a><br /><a href="Film" rel="history">Film</a>&nbsp;<br /><a
+                  href="Photo-gallerie"
+                  rel="history">Photo gallerie&nbsp; <b>.:.</b></a
+                >
+                <br />
+                <a href="Visual-music" rel="history">Visual music︎<br /></a>
+                <br />
+                <a href="News" rel="history"
+                  ><span style="color: rgba(0, 0, 0, 0.4);">News </span></a
+                >
+                <br /><a href="Information" rel="history"
+                  ><span style="color: rgba(0, 0, 0, 0.4);">Information</span
+                  ></a
+                ><br /><a href="cv" rel="history"
+                  ><span style="color: rgba(0, 0, 0, 0.4);">cv</span>
+                </a><br /><a href="Information" rel="history"></a>
+                <br /><small
+                  ><a href="https://twitter.com/szuyi_wang" target="_blank"
+                  ></a><a
+                    href="https://www.instagram.com/szu_yiwang/"
+                    target="_blank"
+                    class="icon-link"
+                    ><span style="color: rgba(0, 0, 0, 0.4);">︎</span></a
+                  >&nbsp; <a
+                    href="https://vimeo.com/szuyiwang"
+                    target="_blank"
+                    class="icon-link"
+                    ><span style="color: rgba(0, 0, 0, 0.4);">︎</span></a
+                  ></small
+                ><span style="color: rgba(0, 0, 0, 0.4);"> &nbsp;</span><small
+                  ><span style="color: rgba(0, 0, 0, 0.4);"
+                    ><a href="mailto:szuyi.sywang@gmail.com" class="icon-link"
+                      ><span style="color: rgba(0, 0, 0, 0.4);">︎</span></a
+                    >&nbsp; <a
+                      href="https://www.facebook.com/sywangszuyi"
+                      target="_blank"
+                      class="icon-link"
+                      ><span style="color: rgba(0, 0, 0, 0.4);">︎</span></a
+                    >&nbsp;&nbsp;</span
+                  ></small
+                ><br />
+                <span style="color: rgba(0, 0, 0, 0.4);"
+                  ><span style="color: rgba(0, 0, 0, 0.4);"
+                    ><small
+                      ><a
+                        href="http://linkedin.com/in/szu-yi-wang-251b1b19"
+                        target="_blank"
+                        class="icon-link"
+                        ><span style="color: rgba(0, 0, 0, 0.4);">︎</span></a
+                      ></small
+                    >&nbsp; <small
+                      ><a
+                        href="https://twitter.com/szuyi_wang"
+                        target="_blank"
+                        class="icon-link"
+                        ><span style="color: rgba(0, 0, 0, 0.4);">︎</span></a
+                      ></small
+                    ><small
+                      ><span style="color: rgba(0, 0, 0, 0.4);"
+                        ><a
+                          href="https://www.facebook.com/sywangszuyi"
+                          target="_blank"
+                          ><span style="color: rgba(0, 0, 0, 0.4);"></span></a
+                        ></span
+                      ></small
+                    ></span
+                  ></span
+                >
+              </div>
             </li>
           </ul>
         </div>

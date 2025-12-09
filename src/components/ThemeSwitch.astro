@@ -8,7 +8,7 @@
     // Initialize theme from localStorage or system preference
     const currentTheme =
         localStorage.getItem("theme") ||
-        (window.matchMedia("(prefers-color-scheme: dark)").matches
+        (window.matchMedia("(prefers-color-scheme: light)").matches
             ? "dark"
             : "light");
     htmlElement.setAttribute("data-theme", currentTheme);
