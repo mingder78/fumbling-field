@@ -7,9 +7,12 @@ import vercel from '@astrojs/vercel';
 
 // https://astro.build/config
 export default defineConfig({
+  redirects: {
+    '/Home': '/'
+  },
   vite: {
-      plugins: [tailwindcss()],
-	},
+    plugins: [tailwindcss()],
+  },
 
   adapter: vercel(),
 });
